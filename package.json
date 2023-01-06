@@ -1,0 +1,14 @@
+{
+  "name": "hossien-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./Sass/Pages/home.scss ./Css/home.css"
+  },
+  "author": "Hossien Mollajafari",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
