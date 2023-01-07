@@ -1,0 +1,14 @@
+@mixin grid-S12() {
+    display: grid;
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+}
+
+@mixin grid-R3_12() {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(12, 1fr);
+}
+
+@mixin grid-R1_4() {
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+}

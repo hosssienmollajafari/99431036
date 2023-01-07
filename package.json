@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./Sass/Pages/home.scss ./Css/home.css"
+    "sass-home": "sass ./Sass/Pages/home.scss ./Css/home.css",
+    "sass-about": "sass ./Sass/Pages/about-us.scss ./Css/about-us.css",
+    "sass-signin": "sass ./Sass/Pages/signin.scss ./Css/signin.css",
+    "sass-signup": "sass ./Sass/Pages/signup.scss ./Css/signup.css"
   },
   "author": "Hossien Mollajafari",
   "license": "ISC",

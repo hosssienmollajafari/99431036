@@ -1,0 +1,78 @@
+@use '../Public/' as *;
+@use '../Layouts/grid.scss' as G;
+@use '../Layouts/flex.scss' as F;
+
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+    body {
+        @include G.grid-S12();
+        height: 100vh;
+        font-family: 'Poppins-Bold', sans-serif;
+        background: url('../Pictures/home-bg.jpg');
+        background-size: cover;
+        
+        header {
+            @include G.grid-R3_12();
+            grid-area: 1/1/3/-1;
+            
+            nav {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-area: 2/2/3/12;
+                font-size: 2rem;
+                color: #FFF;
+                
+                ul {
+                    @include G.grid-R1_4();
+                    grid-column: 9/-1;
+                    list-style: none;
+                    
+                    li {
+                        position: relative;
+                        justify-self: center;
+                        align-self: center;
+                        cursor: pointer;
+
+                        &::after {
+                            content: " ";
+                            background: linear-gradient(
+                                to right,
+                                $sunriseRed,
+                                $sunriseOrange
+                            );
+                            width: 0;
+                            transition: width 0.3s ease-in;
+                        }
+
+                        &:hover::after {
+                            width: 100%;
+                            position: absolute;
+                            top: 3rem;
+                            left: 0;
+                            width: 100%;
+                            height: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            @include G.grid-S12();
+            grid-area: 3/1/-1/-1;
+            
+            h1 {
+                grid-area: 1/1/3/-1;
+                justify-self: center;
+                align-self: center;
+                font-size: 7rem;
+                background: linear-gradient(
+                    to right,
+                    $sunriseRed,
+                    $sunriseOrange);
+                    background-clip: content-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+    }
+}
