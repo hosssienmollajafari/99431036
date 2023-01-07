@@ -4,3 +4,10 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin Flex-d_c() {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}

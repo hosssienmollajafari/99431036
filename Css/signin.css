@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #FFF;
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../Fonts/Poppins/Poppins-Bold.ttf");
+}
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+  body {
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+    height: 100vh;
+    font-family: "Poppins-Bold", sans-serif;
+  }
+  body section {
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+    grid-area: 1/6/-1/-1;
+  }
+  body section header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: 1/2/3/-2;
+    position: relative;
+    right: 15rem;
+  }
+  body section form {
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+    grid-area: 4/2/-2/-2;
+  }
+  body section form input {
+    font-family: "Poppins-Bold", sans-serif;
+    font-size: 2rem;
+    border-style: none none solid;
+    outline: none;
+  }
+  body section form [data-for=userName] {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 25rem;
+    right: 77rem;
+    color: #D9D9D9;
+    pointer-events: none;
+  }
+  body section form [data-for=password] {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 41rem;
+    right: 77rem;
+    color: #D9D9D9;
+    pointer-events: none;
+  }
+  body section form [name=userName] {
+    grid-area: 1/1/2/9;
+  }
+  body section form [name=userName]:focus + [data-for=userName] {
+    top: 23rem;
+    right: 81.5rem;
+    font-size: 1.7rem;
+  }
+  body section form [name=password] {
+    grid-area: 4/1/5/9;
+  }
+  body section form [name=password]:focus + [data-for=password] {
+    top: 39rem;
+    right: 81.5rem;
+    font-size: 1.7rem;
+  }
+  body section form #seePass {
+    grid-area: 4/8/5/9;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+  body section form a,
+  body section form a:visited,
+  body section form a:hover,
+  body section form a:active {
+    grid-area: 6/1/7/-1;
+    color: #DC143C;
+    font-size: 1.7rem;
+  }
+  body section form [type=submit] {
+    grid-area: 8/1/9/9;
+    background: linear-gradient(to right, #0083B0, #00B4DB);
+    color: #FFF;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  body aside {
+    grid-area: 2/1/-1/6;
+    position: relative;
+    top: 2rem;
+    background: url("../Pictures/signin-bg.webp") no-repeat;
+    background-size: contain;
+  }
+}
+
+/*# sourceMappingURL=signin.css.map */

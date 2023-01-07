@@ -1,0 +1,110 @@
+@use '../Public/' as *;
+@use '../Layouts/grid.scss' as G;
+@use '../Layouts/flex.scss' as F;
+
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+    body {
+        @include G.grid-S12();
+        height: 100vh;
+        font-family: 'Poppins-Bold', sans-serif;
+
+        section {
+            @include G.grid-S12();
+            grid-area: 1/6/-1/-1;
+
+            header {
+                @include F.Flex-d_c();
+                grid-area: 1/2/3/-2;
+                position: relative;
+                right: 15rem;
+            }
+
+            form {
+                @include G.grid-S12();
+                grid-area: 4/2/-2/-2;
+
+                input {
+                    font-family: 'Poppins-Bold', sans-serif;
+                    font-size: 2rem;
+                    border-style: none none solid;
+                    outline: none;
+                }
+                
+                
+                [data-for="userName"] {
+                    font-size: 2.5rem;
+                    position: absolute;
+                    top: 25rem;
+                    right: 77rem;
+                    color: #D9D9D9;
+                    pointer-events: none;
+                }
+
+                [data-for="password"] {
+                    font-size: 2.5rem;
+                    position: absolute;
+                    top: 41rem;
+                    right: 77rem;
+                    color: #D9D9D9;
+                    pointer-events: none;
+                }
+                
+                [name="userName"] {
+                    grid-area: 1/1/2/9;
+
+                    &:focus + [data-for="userName"] {
+                        top: 23rem;
+                        right: 81.5rem;
+                        font-size: 1.7rem;
+                    }
+                }
+
+                [name="password"] {
+                    grid-area: 4/1/5/9;
+
+                    &:focus + [data-for="password"] {
+                        top: 39rem;
+                        right: 81.5rem;
+                        font-size: 1.7rem;
+                    }
+                }
+
+                #seePass {
+                    grid-area: 4/8/5/9;
+                    font-size: 4rem;
+                    cursor: pointer;
+                }
+
+                a,
+                a:visited,
+                a:hover,
+                a:active {
+                    grid-area: 6/1/7/-1;
+                    color: #DC143C;
+                    font-size: 1.7rem;
+                }
+
+                [type="submit"] {
+                    grid-area: 8/1/9/9;
+                    background: linear-gradient(
+                        to right,
+                        $raspberryDarkBlue,
+                        $raspberryLightBlue
+                    );
+                    color: #FFF;
+                    border: none;
+                    border-radius: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        aside {
+            grid-area: 2/1/-1/6;
+            position: relative;
+            top: 2rem;
+            background: url('../Pictures/signin-bg.webp') no-repeat;
+            background-size: contain;
+        }
+    }
+}
