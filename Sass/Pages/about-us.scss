@@ -7,8 +7,6 @@
         @include G.grid-S12();
         height: 100vh;
         font-family: 'Poppins-Bold', sans-serif;
-        background: url('../Pictures/home-bg.jpg');
-        background-size: cover;
         
         header {
             @include G.grid-R3_12();
@@ -19,7 +17,6 @@
                 grid-template-columns: repeat(12, 1fr);
                 grid-area: 2/2/3/12;
                 font-size: 2rem;
-                color: #FFF;
                 
                 ul {
                     @include G.grid-R1_4();
@@ -36,8 +33,8 @@
                             content: " ";
                             background: linear-gradient(
                                 to right,
-                                $sunriseRed,
-                                $sunriseOrange
+                                $aminDarkPurple,
+                                $aminLightPurple
                             );
                             width: 0;
                             transition: width 0.3s ease-in;
@@ -51,6 +48,13 @@
                             width: 100%;
                             height: 0.5rem;
                         }
+
+                        & a,
+                        & a:visited,
+                        & a:hover,
+                        & a:active {
+                            color: #000;
+                        }
                     }
                 }
             }
@@ -60,19 +64,31 @@
             @include G.grid-S12();
             grid-area: 3/1/-1/-1;
             
-            h1 {
-                grid-area: 2/1/5/-1;
-                justify-self: center;
-                align-self: center;
-                font-size: 7rem;
-                background: linear-gradient(
-                    to right,
-                    $sunriseRed,
-                    $sunriseOrange);
-                    background-clip: content-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+            section {
+                @include G.grid-S12();
+                grid-area: 1/1/-1/6;
+
+                h1 {
+                    grid-area: 3/1/4/-1;
+                }
+
+                p {
+                    grid-area: 4/1/-1/-1;
+                    font-size: 1.7rem;
+                }
+
+                h1,
+                p {
+                    position: relative;
+                    left: 2rem;
                 }
             }
+
+            div {
+                grid-area: 1/6/-1/-1;
+                background: url('../Pictures/about-us.jpg') top no-repeat;
+                background-size: contain;
+            }
         }
+    }
 }
