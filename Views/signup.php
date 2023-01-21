@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<?php
-require '../Php/db.php';
-?>
 <html lang="en">
     <head>
         <!-- meta data -->
@@ -17,7 +14,7 @@ require '../Php/db.php';
             <header>
                 <h1>Signup</h1>
             </header>
-            <form action="" method="post">
+            <form action="../Php/signup.php" method="post">
                 <input type="text" name="userName" placeholder="username" />
                 <input type="password" name="userPass" placeholder="password" />
                 <input type="password" name="confirmPass" placeholder="confirm password" />
