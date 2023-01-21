@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+require '../Php/db.php';
+?>
 <html lang="en">
     <head>
         <!-- meta data -->
@@ -18,7 +21,7 @@
                 <input type="text" name="userName" placeholder="username" />
                 <input type="password" name="userPass" placeholder="password" />
                 <input type="password" name="confirmPass" placeholder="confirm password" />
-                <a href="./signin.html">Have an account?</a>
+                <a href="./signin.php">Have an account?</a>
                 <input type="submit" value="Signup" />
             </form>
         </section>

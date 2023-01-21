@@ -29,7 +29,7 @@
                 />
                 <span id="seePass">🙈</span>
 
-                <a href="./signup.html">Don't have an account?</a>
+                <a href="./signup.php">Don't have an account?</a>
 
                 <input
                     type="submit"
