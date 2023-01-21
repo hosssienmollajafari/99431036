@@ -44,7 +44,7 @@ a:active {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-end;
-    grid-area: 1/2/3/-2;
+    grid-area: 1/1/3/-1;
     position: relative;
     right: 15rem;
   }
@@ -62,21 +62,21 @@ a:active {
   body section form [name=userName] {
     grid-area: 1/1/2/9;
   }
-  body section form [name=password] {
-    grid-area: 4/1/5/9;
+  body section form [name=userPass] {
+    grid-area: 3/1/4/9;
   }
-  body section form #seePass {
-    grid-area: 4/8/5/9;
-    font-size: 4rem;
-    cursor: pointer;
+  body section form [name=confirmPass] {
+    grid-area: 5/1/6/9;
   }
   body section form a,
   body section form a:visited,
   body section form a:hover,
   body section form a:active {
-    grid-area: 6/1/7/-1;
+    grid-area: 7/1/8/-1;
     color: #DC143C;
     font-size: 1.7rem;
+    position: relative;
+    top: -1rem;
   }
   body section form [type=submit] {
     grid-area: 8/1/9/9;
@@ -90,9 +90,9 @@ a:active {
     grid-area: 2/1/-1/6;
     position: relative;
     top: 2rem;
-    background: url("../Pictures/signin-bg.webp") no-repeat;
+    background: url("../Pictures/signup.jpg") no-repeat;
     background-size: contain;
   }
 }
 
-/*# sourceMappingURL=signin.css.map */
+/*# sourceMappingURL=signup.css.map */
