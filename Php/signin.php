@@ -3,7 +3,7 @@
 $Server_Name  = 'localhost';
 $User_Name    = 'root';
 $Password     = '';
-$DB_Name      = 'alireza'; 
+$DB_Name      = 'hossien_store'; 
 try{
     $Connection = new PDO("mysql:host=$Server_Name;dbname=$DB_Name", $User_Name, $Password);
     $Connection -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
