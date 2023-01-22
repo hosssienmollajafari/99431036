@@ -16,7 +16,7 @@
             <header>
                 <h1>Signin</h1>
             </header>
-            <form action="" method="post">
+            <form action="../Php/signin.php" method="post">
                 <input 
                     type="text"
                     name="userName" 

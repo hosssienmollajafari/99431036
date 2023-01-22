@@ -11,7 +11,7 @@ try{
     $getUserName = $_POST['userName'];
     $getUserPass = $_POST['password'];
 
-    $sql = $Connection -> prepare("SELECT * FROM employee");
+    $sql = $Connection -> prepare("SELECT * FROM users");
     $sql ->execute();
     $Letter = $sql -> fetchAll();
 
