@@ -9,6 +9,9 @@ try{
     $Connection -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $sql = $Connection -> prepare("SELECT * FROM products");
+    $sql ->execute();
+    $Letter = $sql -> fetchAll();
+
 ?>
 
 <!DOCTYPE html>
@@ -34,17 +37,23 @@ try{
             </nav>
         </header>
         <main>
-        <?php
-        $sql ->execute();
-        $Letter = $sql -> fetchAll();
-
-        foreach ( $Letter as $v ){?>
-            <p><?= $v['productName']?></p>
+            <article>
+            <?php
+            foreach ( $Letter as $v ){
+                echo '
+                <section>'?>
+                    <h1><?= $v["productName"]?></h1>
+                    <p><?= $v["productDescription"] ?></p>
+                    <a href="#">Read More</a>
+                <?php 
+                echo '
+                </section>
+            ';}?>
+            </article>
         </main>
     </body>
 </html>
 <?php 
-    }
 } catch (PDOException $e){
     echo $e -> getMessage();
 }

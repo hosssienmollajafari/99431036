@@ -42,11 +42,11 @@ try {
                 <header>
                     <nav>
                         <ul>
-                            <li><a href="./home.php">Home</a></li>
-                            <li><a href="./products.php">Products</a></li>
-                            <li><a href="./about-us.php">About Us</a></li>
-                            <li><a href="./signin.php">Signin</a></li>
-                            <li><a href="./signup.php">Signup</a></li>
+                            <li><a href="../Views/home.php">Home</a></li>
+                            <li><a href="../Views/products.php">Products</a></li>
+                            <li><a href="../Views/about-us.php">About Us</a></li>
+                            <li><a href="../Views/signin.php">Signin</a></li>
+                            <li><a href="../Views/signup.php">Signup</a></li>
                         </ul>
                     </nav>
                 </header>
