@@ -122,7 +122,7 @@ a:active {
     display: flex;
     flex-flow: row wrap;
     gap: 3rem 6rem;
-    overflow: scroll;
+    overflow: auto;
   }
   body main article section {
     display: grid;
