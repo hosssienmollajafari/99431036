@@ -7,7 +7,11 @@
     "sass-home": "sass ./Sass/Pages/home.scss ./Css/home.css",
     "sass-about": "sass ./Sass/Pages/about-us.scss ./Css/about-us.css",
     "sass-signin": "sass ./Sass/Pages/signin.scss ./Css/signin.css",
-    "sass-signup": "sass ./Sass/Pages/signup.scss ./Css/signup.css"
+    "sass-signup": "sass ./Sass/Pages/signup.scss ./Css/signup.css",
+    "sass-products": "sass ./Sass/Pages/products.scss ./Css/products.css",
+    "sass-add-product": "sass ./Sass/Pages/add-product.scss ./Css/add-product.css",
+    "sass-products": "sass ./Sass/Pages/products.scss ./Css/products.css",
+    "sass-products": "sass ./Sass/Pages/products.scss ./Css/products.css"
   },
   "author": "Hossien Mollajafari",
   "license": "ISC",
