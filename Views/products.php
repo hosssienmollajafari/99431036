@@ -32,7 +32,7 @@ try{
                     <li><a href="./products.php">All Products</a></li>
                     <li id="create"><a href="./add-product.php">Create Product</a></li>
                     <li id="delete"><a href="./delete.php">Delete Product</a></li>
-                    <li id="update"><a href="./update">Update Product</a></li>
+                    <li id="update"><a href="./update.php">Update Product</a></li>
                 </ul>
             </nav>
         </header>
