@@ -10,8 +10,7 @@
     "sass-signup": "sass ./Sass/Pages/signup.scss ./Css/signup.css",
     "sass-products": "sass ./Sass/Pages/products.scss ./Css/products.css",
     "sass-add-product": "sass ./Sass/Pages/add-product.scss ./Css/add-product.css",
-    "sass-products": "sass ./Sass/Pages/products.scss ./Css/products.css",
-    "sass-products": "sass ./Sass/Pages/products.scss ./Css/products.css"
+    "sass-del-product": "sass ./Sass/Pages/del-product.scss ./Css/del-product.css"
   },
   "author": "Hossien Mollajafari",
   "license": "ISC",

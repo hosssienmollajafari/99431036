@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #FFF;
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../Fonts/Poppins/Poppins-Bold.ttf");
+}
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+  body {
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+    height: 100vh;
+    font-family: "Poppins-Bold", sans-serif;
+  }
+  body form {
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+    grid-area: 2/3/6/-3;
+    border: solid 0.01rem #808080;
+    border-radius: 1rem;
+  }
+  body form h1 {
+    grid-area: 2/1/4/-1;
+    align-self: center;
+    justify-self: center;
+    background: linear-gradient(to right, #F00000, #DC281E);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  body form input {
+    font-family: "Poppins-Bold", sans-serif;
+    font-size: 1.3rem;
+    text-indent: 1rem;
+  }
+  body form [name=productName] {
+    grid-area: 6/2/8/10;
+  }
+  body form [type=submit] {
+    grid-area: 6/10/8/12;
+    font-size: 2.5rem;
+    border: none;
+    border-radius: 1rem;
+    background: #DC281E;
+    color: #FFF;
+    cursor: pointer;
+    margin-left: 3rem;
+  }
+}
+
+/*# sourceMappingURL=del-product.css.map */

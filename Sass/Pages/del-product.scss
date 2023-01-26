@@ -1,0 +1,55 @@
+@use '../Public/' as *;
+@use '../Layouts/grid.scss' as G;
+@use '../Layouts/flex.scss' as F;
+
+
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+    body {
+        @include G.grid-S12();
+        height: 100vh;
+        font-family: 'Poppins-Bold', sans-serif;
+
+        form {
+            @include G.grid-S12();
+            grid-area: 2/3/6/-3;
+            border: solid 0.01rem #808080;
+            border-radius: 1rem;
+
+            h1 {
+                grid-area: 2/1/4/-1;
+                align-self: center;
+                justify-self: center;
+                background: 
+                    linear-gradient(
+                        to right,
+                        #F00000,
+                        #DC281E
+                    );
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+
+            input {
+                font-family: 'Poppins-Bold', sans-serif;
+                font-size: 1.3rem;
+                text-indent: 1rem;
+            }
+
+            [name="productName"] {
+                grid-area: 6/2/8/10;
+            }
+            
+            [type="submit"] {
+                grid-area: 6/10/8/12;
+                font-size: 2.5rem;
+                border: none;
+                border-radius: 1rem;
+                background: #DC281E;
+                color: #FFF;
+                cursor: pointer;
+                margin-left: 3rem;
+            }
+        }
+    }
+}
